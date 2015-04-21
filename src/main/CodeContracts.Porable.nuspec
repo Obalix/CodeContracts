@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>CodeContracts.Portable</id>
+		<version>1.0.0</version>
+		<title>CodeContracts.Portable</title>
+		<description>Portable version of the CodeContracts package.</description>
+		<releaseNotes>
+			1.0.0
+			- Created portable libraries for [.Net40 + SL] and ].NET45 + Win8 + WP8 + WP81]
+			- Made some minor alterations to ensuree the projects can be compiled as portable libraries
+		</releaseNotes>
+		<authors>UBS AG, Axel Eckenberger (AEckenberger)</authors>
+		<owners>Axel Eckenberger (AEckenberger)</owners>
+		<projectUrl>https://github.com/Obalix/CodeContracts</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<copyright>UBS AG 2014, Axel Eckenberger 2015</copyright>
+		<tags>Code Contracts Portable</tags>
+	</metadata>
+	<files>
+		<file src="CodeContracts.Portable.4_0\bin\Release\CodeContracts.*" target="lib\portable-net4+sl5+MonoAndroid1+MonoTouch1"/>
+		<file src="CodeContracts.Portable.4_5\bin\Release\CodeContracts.*" target="lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1"/>
+	</files>
+</package>
