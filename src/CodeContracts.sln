@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeContracts", "main\CodeContracts\CodeContracts.csproj", "{DBCB564F-73D4-4056-ADA2-BE5900E2FC2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D9169FE8-B70B-4415-AA4A-89CBCD26E907}"
@@ -11,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D9169F
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeContracts-Specs", "specs\CodeContracts-Specs\CodeContracts-Specs.csproj", "{C6A2A851-664D-4AFA-8D99-AC08A3A533D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeContracts.Portable.4_0", "CodeContracts.Portable.4_0\CodeContracts.Portable.4_0.csproj", "{A70B1FE5-05D1-4E76-9A23-10DE36FC2F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeContracts.Portable.4_5", "CodeContracts.Portable.4_5\CodeContracts.Portable.4_5.csproj", "{BCB1C748-8C0C-42FF-A68F-E31272AB0BDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +32,14 @@ Global
 		{C6A2A851-664D-4AFA-8D99-AC08A3A533D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6A2A851-664D-4AFA-8D99-AC08A3A533D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6A2A851-664D-4AFA-8D99-AC08A3A533D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70B1FE5-05D1-4E76-9A23-10DE36FC2F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70B1FE5-05D1-4E76-9A23-10DE36FC2F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70B1FE5-05D1-4E76-9A23-10DE36FC2F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70B1FE5-05D1-4E76-9A23-10DE36FC2F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB1C748-8C0C-42FF-A68F-E31272AB0BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB1C748-8C0C-42FF-A68F-E31272AB0BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB1C748-8C0C-42FF-A68F-E31272AB0BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB1C748-8C0C-42FF-A68F-E31272AB0BDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

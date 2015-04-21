@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 
 namespace CodeContracts
 {
@@ -269,7 +270,12 @@ namespace CodeContracts
         public static void NotNullSubtype<T>(Type type, string parameterName)
         {
             NotNull(type, parameterName);
+			//type.GetTypeInfo()
+#if (NET45)
+			True(typeof(T).GetTypeInfo().IsAssignableFrom(type.GetTypeInfo()), parameterName, "The type {0} or a derived type was expected, but {1} was given.", typeof (T).FullName, type.FullName);
+#else
             True(typeof (T).IsAssignableFrom(type), parameterName, "The type {0} or a derived type was expected, but {1} was given.", typeof (T).FullName, type.FullName);
+#endif
             Contract.EndContractBlock();
         }
 

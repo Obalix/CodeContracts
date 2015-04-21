@@ -93,7 +93,9 @@ namespace CodeContracts
         /// An internal error exception that should never be caught.
         /// </summary>
         [SuppressMessage("Microsoft.Design", "CA1064:ExceptionsShouldBePublic", Justification = "This exception should never be caught.")]
+#if (!PORTABLE)
         [Serializable]
+#endif
         public class InternalErrorException : Exception
         {
             /// <summary>
@@ -112,6 +114,7 @@ namespace CodeContracts
             {
             }
 
+#if (!PORTABLE)
             /// <summary>
             /// Initializes a new instance of the <see cref="InternalErrorException"/> class.
             /// </summary>
@@ -125,6 +128,7 @@ namespace CodeContracts
                 : base(info, context)
             {
             }
+#endif
         }
     }
 }
